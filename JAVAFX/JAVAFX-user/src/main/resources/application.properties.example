@@ -1,0 +1,14 @@
+# Copy this file to application.properties and fill in your own values.
+# application.properties is gitignored - never commit the real file.
+twilio.accountSid=YOUR_TWILIO_ACCOUNT_SID
+twilio.authToken=YOUR_TWILIO_AUTH_TOKEN
+twilio.fromNumber=+1XXXXXXXXXX
+twilio.whatsappNumber=whatsapp:+1XXXXXXXXXX
+twilio.admin.accountSid=YOUR_ADMIN_TWILIO_ACCOUNT_SID
+twilio.admin.authToken=YOUR_ADMIN_TWILIO_AUTH_TOKEN
+stripe.apiKey=YOUR_STRIPE_SECRET_KEY
+google.clientId=YOUR_GOOGLE_OAUTH_CLIENT_ID
+google.clientSecret=YOUR_GOOGLE_OAUTH_CLIENT_SECRET
+stability.apiKey=YOUR_STABILITY_AI_API_KEY
+mail.username=YOUR_GMAIL_ADDRESS
+mail.appPassword=YOUR_GMAIL_APP_SPECIFIC_PASSWORD

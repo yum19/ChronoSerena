@@ -1,0 +1,84 @@
+# ============================================================
+# 1. SECRETS - never commit these
+# ============================================================
+
+# Environment files (DB creds, SMTP password, Twilio, Stripe, APP_SECRET)
+.env
+.env.local
+.env.*.local
+.env.dev
+**/.env
+**/.env.local
+**/.env.*.local
+**/.env.dev
+!**/.env.example
+!**/.env.test
+
+# Java config holding Twilio / DB credentials
+**/application.properties
+!**/application.properties.example
+
+# Symfony decrypted prod secrets
+**/config/secrets/prod/prod.decrypt.private.php
+
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+*.ppk
+
+
+# ============================================================
+# 2. PRIVATE USER DATA - uploaded documents & photos
+# ============================================================
+uploads/
+
+
+# ============================================================
+# 3. IDE / EDITOR
+# ============================================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# 4. BUILD / DEPENDENCIES
+# ============================================================
+/WEB/vendor/
+/WEB/var/
+/WEB/public/bundles/
+/WEB/public/assets/
+/WEB/public/uploads/.gitkeep
+/JAVAFX/JAVAFX-user/target/
+target/
+build/
+dist/
+
+
+# ============================================================
+# 5. LOGS / CACHES
+# ============================================================
+*.log
+logs/
+.phpunit.result.cache
+.php-cs-fixer.cache
+npm-debug.log*
+yarn-error.log*
+
+
+# ============================================================
+# 6. OS
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
